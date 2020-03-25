@@ -17,7 +17,7 @@ def get_password_length():
 	return int(length)
 
 
-def password_generator(choice_bool, length=8):
+def password_generator(cbl, length=8):
 	'''
 	Generates a random password having the specified length
 	:length -> length of password to be generated. Defaults to 8 
@@ -35,7 +35,7 @@ def password_generator(choice_bool, length=8):
 	:returns string <class 'str'>
 	'''
 	# create alphanumerical by fetching string constant
-	printable = fetch_string_constant(choice_bool)
+	printable = fetch_string_constant(cbl)
 
 	# convert printable from string to list and shuffle
 	printable = list(printable)
